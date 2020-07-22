@@ -1,43 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google Homepage</title>
-    <style>
-        body {
-            background-image: url('./images/google-logo.png');
-            background-repeat: no-repeat;
-            background-position: 585px 220px;
-            background-size: 300px 100px;
-        }
-
-        .search_bar {
-            position: absolute;
-            left: 30%;
-            top: 50%;
-        }
-
-        .round {
-            padding: 10px;
-            border-radius: 30px;
-        }
-
-        input,
-        input::-webkit-input-placeholder {
-            font-size: 25px;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>Google</title>
 </head>
-
 <body>
     <div class="header">
-        <div class="search_bar">
-            <input type="text" name="search" value="Search Google or type a URL" size="41" class="round">
+        <a href="#">Gmail</a>
+        <a href="#">Images</a>
+        <button>Sign In</button>
+    </div>
+    <div class="main">
+        <div class="logo-img">
+            <img src="./images/google-logo.png" alt="Google-Logo">
+        </div>
+        <div class="search-box">
+            <input type="text" name="txtname" placeholder="Search or Enter URL">
+        </div>
+        <div class="btn">
+            <button>Google Search</button>
+            <button>I'm Feeling Lucky</button>
+        </div>
+        <div class="langs">
+            <label>Google Offered in</label>
+            <a href="">Hindi</a>
+            <a href="">English</a>
+            <a href="">Marathi</a>
+            <a href="">Gujrati</a>
+            <a href="">Bengali</a>
         </div>
     </div>
 
-</body>
+    <div class="footer">
+        <div class="country">
+            <span>India</span>
+        </div>
 
+        <div class="footer-links">
+            <div class="footer-left">
+                <a href="#">Advertising</a>
+                <a href="#">Business</a>
+                <a href="#">About</a>
+            </div>
+
+            <div class="footer-right">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Settings</a>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
