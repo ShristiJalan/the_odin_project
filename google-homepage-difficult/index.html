@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/f6c0521099.js" crossorigin="anonymous"></script>
     <title>Web Page - Google Search</title>
 </head>
 
@@ -13,7 +14,7 @@
     <div class="container">
         <header class="header">
             <div class="header-img">
-                <img src="./images/google-logo.png" alt="Google-Logo">
+                <img src="./images/google-logo.png" alt="Google-Logo" class="google-logo">
             </div>
 
             <div class="search-bar">
@@ -21,20 +22,24 @@
             </div>
 
             <div class="top">
-                <a href=""><img src="./images/circled-icon.png" alt=""></a>
-            </div>
-
-            <div class="search-navbar">
-                <a class="nav-item" href="">All</a>
-                <a class="nav-item" href="">News</a>
-                <a class="nav-item" href="">Maps</a>
-                <a class="nav-item" href="">Videos</a>
-                <a class="nav-item" href="">Shopping</a>
-                <a class="nav-item" href="">More</a>
-                <a class="nav-item" href="">Settings</a>
-                <a class="nav-item" href="">Tools</a>
+                <a href=""><img src="./images/circled-icon.png" alt="" class="icon"></a>
             </div>
         </header>
+
+        <nav class="nav-bar">
+            <ul class="nav-list" id="search-options">
+                <li><i class="fa fa-search"></i><a href="">All</a></li>
+                <li><i class="fa fa-newspaper-o"></i><a href="">News</a></li>
+                <li><i class="fa fa-map-marker"></i><a href="">Maps</a></li>
+                <li><i class="fa fa-youtube-play"></i><a href="">Videos</a></li>
+                <li><i class="fa fa-image"></i><a href="">Images</a></li>
+                <li><i class="fa fa-ellipsis-v"></i><a href="">More</a></li>
+            </ul>
+            <ul class="nav-list" id="search-adjustments">
+                <li>Settings</li>
+                <li>Tools</li>
+            </ul>
+        </nav>
     </div>
 
     <div class="page-container">
@@ -42,6 +47,7 @@
             <div class="search-results-container">
 
                 <p>About 8,57,00,000 results (0.61 seconds)</p>
+                <br>
                 <div class="search-result">
                     <div class="search-breadcrumb">
                         victor-lf.github.io &#8250; google-search-results &#9662
@@ -71,18 +77,18 @@
 
                 <h3 id="videos-header">Videos</h3>
                 <div class="video-grid">
-                    <a class="video-title">
-                        <iframe width="500" height="320" src="https://www.youtube.com/embed/YWA-xbsJrVg" frameborder="0"
+                    <a class="video-title1">
+                        <iframe width="250" height="320" src="https://www.youtube.com/embed/YWA-xbsJrVg" frameborder="0"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
+                            allowfullscreen></iframe><br>
                         <a href="" id="iframe-title">How to Make a Website in 10 mins - Simple & Easy</a>
                         <p>Website Learners <br> Youtube - Jan 3, 2018</p>
                     </a>
 
-                    <a class="video-title">
-                        <iframe width="500" height="320" src="https://www.youtube.com/embed/jHPr-CuvHhs" frameborder="0"
+                    <a class="video-title2">
+                        <iframe width="250" height="320" src="https://www.youtube.com/embed/jHPr-CuvHhs" frameborder="0"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
+                            allowfullscreen></iframe><br>
                         <a href="" id="iframe-title">Welcome to the web! (video)</a>
                         <p>Khan Academy Computing <br> Khan Academy - Mar 28, 2020</p>
                     </a>
@@ -105,8 +111,7 @@
                     <h3>People also ask</h3>
                     <p class="people-ask-question">
                         How can I make my own Webpage?
-                        <i class="fa fa-chevron-down"></i>
-                    </p>
+                        <i class="fa fa-chevron-down"></i></p>
                     <p class="people-ask-question">
                         How do I make a great website?
                         <i class="fa fa-chevron-down"></i>
@@ -216,15 +221,16 @@
             </div>
 
             <div id="next-pages">
-                <img src="https://raw.githubusercontent.com/rinconv911/google-search-results/master/images/search-results-next-pages.png" alt="Next pages of the Google search results" width="312px" height="56px">
-              </div>
+                <img src="https://raw.githubusercontent.com/rinconv911/google-search-results/master/images/search-results-next-pages.png"
+                    alt="Next pages of the Google search results" width="312px" height="56px">
+            </div>
         </main>
 
 
         <footer id="footer">
             <div id="location">
                 Country
-                <span id="country"> • Zone, City </span>
+                <span id="country"><b> • Zone, City </b></span>
                 <a href="#">- From your places (Home)</a> -
                 <a>Use precise location</a> -
                 <a>Learn more</a>
